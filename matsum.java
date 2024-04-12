@@ -9,17 +9,17 @@ int c[][];
 public void matrix()
 {
 Scanner sc=new Scanner(System.in);
-System.out.println("Enter the numebr of rows 1st matrix");
+System.out.println("Enter the numebr of rows 1st matrix:");
 m1=sc.nextInt();
-System.out.println("Enter the numeber of columns 1st matrix");
+System.out.println("Enter the numeber of columns 1st matrix:");
 n1=sc.nextInt();
-System.out.println("Enter the numebr of rows 2nd matrix");
+System.out.println("Enter the numebr of rows 2nd matrix:");
 m2=sc.nextInt();
-System.out.println("Enter the numeber of columns 2nd matrix");
+System.out.println("Enter the numeber of columns 2nd matrix:");
 n2=sc.nextInt();
 a=new int[m1][n1];
 b=new int[m2][n2];
-System.out.println("Enter the elements of 1st matrix");
+System.out.println("Enter the elements of 1st matrix:");
 for(i=0;i<m1;i++)
 {
 for(j=0;j<n1;j++)
@@ -32,12 +32,12 @@ for(i=0;i<m1;i++)
 {
 for(j=0;j<n1;j++)
 {
-System.out.print(a[i][j]);
+System.out.print(a[i][j]+"\t");
 }
 System.out.println(" ");
 }
 
-System.out.println("Enter the elements of 2nd matrix");
+System.out.println("Enter the elements of 2nd matrix:");
 for(i=0;i<m2;i++)
 {
 for(j=0;j<n2;j++)
@@ -50,7 +50,7 @@ for(i=0;i<m2;i++)
 {
 for(j=0;j<n2;j++)
 {
-System.out.print(b[i][j]);
+System.out.print(b[i][j]+"\t");
 }
 System.out.println(" ");
 }
@@ -72,7 +72,7 @@ for(i=0;i<m1;i++)
 {
 for(j=0;j<n1;j++)
 {
-System.out.print(c[i][j]);
+System.out.print(c[i][j]+"\t");
 }
 System.out.println(" ");
 }
