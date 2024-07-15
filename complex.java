@@ -1,17 +1,28 @@
+//ADDING TWO COMPLES NUMBER
 import java.util.Scanner;
 class complex
 {
-public static void main(String args[])
-{
-float x;
-float y;
-float sum;
-Scanner sc=new Scanner(System.in);
-System.out.println("Enter 1st complex number:");
-x=sc.nextFloat();
-System.out.println("Enter 2nd complex number:");
-y=sc.nextFloat();
-sum=x+y;
-System.out.println("Sum of two complex number is:"+sum);
+    double i;
+    double r;
+    Scanner sc=new Scanner(System.in);
+    public void add()
+    {
+        System.out.println("Enter the number:");
+        r=sc.nextDouble();
+        i=sc.nextDouble();
+    }
+    public static void main(String args[])
+    {
+        double real;
+        double img;
+complex c=new complex();
+c.add();
+complex c1=new complex();
+c1.add();
+real=c.r+c1.r;
+img=c.i+c1.i;
+System.out.print(c.r+" + "+c1.r+"i"+" + "+c.i+" + "+c1.i+" = ");
+System.out.println(real+" + "+img+"i");
+    }
+
 }
-} 
